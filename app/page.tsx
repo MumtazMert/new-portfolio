@@ -10,7 +10,7 @@ import ToolsSection from "@/components/sections/tools-section/ToolsSection";
 import ContactSection from "@/components/sections/contact-section/ContactSection";
 import { useNavigation, ModalSection } from "@/hooks/useNavigation";
 import { ReactNode } from "react";
-
+import HeroFlicker from "@/components/HeroFlicker";
 export default function Home() {
   const { activeModal, openModal, closeModal } = useNavigation();
 
@@ -37,10 +37,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-8 relative overflow-hidden">
+      <HeroFlicker />
       {/* Scanline Overlay */}
       <ScanlineOverlay />
 
       {/* Main Menu */}
+
       <HolographicMenu
         onMenuItemClick={(section) => openModal(section as ModalSection)}
       />
