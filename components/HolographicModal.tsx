@@ -68,7 +68,7 @@ export default function HolographicModal({
                                             onClick={onClose}
                                             className="text-[var(--holo-primary)] hover:brightness-150 transition-all holo-glow text-sm mono"
                                         >
-                                            [O] CLOSE
+                                            [ESC] CLOSE
                                         </button>
                                     </div>
 

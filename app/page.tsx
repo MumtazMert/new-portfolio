@@ -4,10 +4,10 @@ import ScanlineOverlay from "@/components/ScanlineOverlay";
 import HolographicMenu from "@/components/HolographicMenu";
 import HolographicModal from "@/components/HolographicModal";
 import ControllerPrompts from "@/components/ControllerPrompts";
-import AboutSection from "@/components/sections/AboutSection";
-import WorkSection from "@/components/sections/WorkSection";
-import ToolsSection from "@/components/sections/ToolsSection";
-import ContactSection from "@/components/sections/ContactSection";
+import AboutSection from "@/components/sections/about-section/AboutSection";
+import WorkSection from "@/components/sections/work-section/WorkSection";
+import ToolsSection from "@/components/sections/tools-section/ToolsSection";
+import ContactSection from "@/components/sections/contact-section/ContactSection";
 import { useNavigation, ModalSection } from "@/hooks/useNavigation";
 import { ReactNode } from "react";
 
