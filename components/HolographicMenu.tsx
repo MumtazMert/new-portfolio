@@ -3,17 +3,11 @@
 import { motion } from "framer-motion";
 import ChromaticAberration from "./ChromaticAberration";
 import { useAudioManager } from "./AudioManager";
+import { menuItems } from "../data/menu";
 
 interface HolographicMenuProps {
     onMenuItemClick: (section: string) => void;
 }
-
-const menuItems = [
-    { id: "about", label: "About" },
-    { id: "work", label: "Work" },
-    { id: "tools", label: "Tools" },
-    { id: "contact", label: "Contact" },
-];
 
 export default function HolographicMenu({ onMenuItemClick }: HolographicMenuProps) {
     const { playHover, playClick } = useAudioManager();
@@ -35,7 +29,7 @@ export default function HolographicMenu({ onMenuItemClick }: HolographicMenuProp
                     {/* Menu Header */}
                     <div className="mb-6 pb-3 border-b border-[var(--holo-primary)]/30">
                         <h2 className="text-sm font-bold tracking-wider holo-glow uppercase">
-                            / PAUSE MENU
+                            / PORTFOLIO MENU
                         </h2>
                     </div>
 

@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
 import ChromaticAberration from "./ChromaticAberration";
+import { useKeyPress } from "../hooks/useKeyPress";
 
 interface HolographicModalProps {
     isOpen: boolean;
@@ -19,19 +19,11 @@ export default function HolographicModal({
 }: HolographicModalProps) {
 
     // Handle ESC key to close modal
-    useEffect(() => {
-        const handleEsc = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') {
-                onClose();
-            }
-        };
-
+    useKeyPress("Escape", () => {
         if (isOpen) {
-            window.addEventListener('keydown', handleEsc);
+            onClose();
         }
-
-        return () => window.removeEventListener('keydown', handleEsc);
-    }, [isOpen, onClose]);
+    });
 
     return (
         <AnimatePresence>
