@@ -2,7 +2,7 @@ import { FIRSTPROJECTNAME, FIRSTPROJECTDESC, FIRSTPROJECTTECH, SECONDPROJECTNAME
 
 export default function WorkSection() {
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[var(--holo-primary)]/50 scrollbar-track-transparent">
             <div className="space-y-4">
                 <div className="border border-[var(--holo-primary)]/30 p-4 bg-[var(--holo-primary)]/5">
                     <h3 className="text-lg font-semibold mb-2 holo-glow">{FIRSTPROJECTNAME}</h3>
